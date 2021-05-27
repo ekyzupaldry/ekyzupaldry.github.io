@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+
+    --border:1px solid #eee;
+    --bg-color: #0fffff;
+    --color: #05a6a6;
+}
+
+header{
+    display: inline;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: var(--bg-color) ;
+    font-size: x-large;
+    height: 2.5em;
+    position: sticky;
+    top: 0;
+}
+
+.logo a{
+    font-family: 'Kaushan Script', cursive;
+    color: var(--color);
+    font-weight: bolder;
+    letter-spacing: .1em;
+}
+
+.list-of-books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    min-height: 100vh;
+}
+
+.card{
+    margin: 1em;
+    width: 400px;
+    border: var(--border);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 5px 3px 10px 1px rgb(121, 121, 121) ;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.card .card-title h3{
+   margin: 1.5em;
+   letter-spacing: .1em;
+}
+
+.card .card-body h4{
+    padding: 1em;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.card .card-body p{
+    padding: 1em;
+    font-size: .9rem;
+    line-height: 1.3em;
+    text-indent: 1em;
+}
+
+.card .card-body a{
+   color: var(--color);
+}
+
+img{
+    width:8em;
+    display: block;
+    margin: 1em auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card .card-footer{
+    margin: 1.8em .9em;
+}
+
+.btn{
+    padding: .8em;
+    outline: none;
+    border: var(--border);
+    cursor: pointer;
+    color: var(--color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.btn:hover{
+    box-shadow: 5px 3px 10px 1px rgb(233, 233, 233);
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.btn-read{
+    background-color: var(--bg-color);
+    border: 0;
+}
+
+.btn-download{
+    background-color: transparent;
+}
+
+footer{
+    background-color: var(--bg-color);
+    padding: 1em;
+}
+
+footer a{
+    color: var(--color);
+    font-weight: bolder;
+}
+
+/* MEDIA QUERY */
+@media screen  and (max-width:333px){
+    .card-footer{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+    
+    .btn{
+        margin: .1em;
+    }  
+}
+
+/* UTILITIES */
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.font-italic{
+    font-style: italic;
+}
