@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "Arial Narrow", sans-serif;
+		}
+
+		body{
+			background-color: #eee;
+			letter-spacing: 1px;
+		}
+
+		.container{
+			margin: 2em;
+			padding: 2em;
+		}
+
+		.container h1{
+			text-align: center;
+		}
+
+		button#pilih-pemenang, button#mulai{
+			display: block;
+			margin: 30px auto;
+			border: none;
+			border-radius: 5px;
+			background-color: #333;
+			color: #f5faff;
+			font-size: 1.3rem;
+			padding: .5em;
+			cursor: pointer;
+			font-weight: 700;
+			letter-spacing: 3px;
+		}
+
+		button#pilih-pemenang:hover, button#mulai:hover{
+			box-shadow: 0 0 20px #222;			
+		}
+
+		button#pilih-pemenang{
+			display: none;
+		}
+
+		.card{
+			box-shadow: 0 0 20px #222;
+			padding: 1em;
+			font-weight: bolder;
+			font-size: 2rem;	
+		}
+
+		.keluarga-wrapper{
+			display: flex;
+			flex-wrap: wrap;	
+			justify-content: center;		
+		}
+
+		.keluarga-pemenang{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.foto-keluarga-pemenang{
+			width: 500px;
+			height: 500px;
+		}
+
+		.keluarga{
+			margin: .2em;
+		}
+		
+		.pemenang{
+			width: 250px;
+			height: 250px;
+		}
+
+	</style>
+	<title>Giveaway</title>
+</head>
+<body>
+	<div class="container">
+		<h1>GIVEAWAY KELUARGA <br>SAKINAH, MAWADDAH, WARAHMAH</h1>
+		<button type="button" id="mulai">MULAI</button>
+		<button type="button" id="pilih-pemenang">PILIH PEMENANG</button>
+
+		<div class="card">
+			<div class="keluarga-pemenang">
+				
+			</div>
+
+			<div class="keluarga-wrapper">
+				<div class="keluarga">
+					<img src="images/gambar-1.jpg" alt="Kel. A. Siapa/Br. Siapa" class="foto-keluarga">
+				</div>
+
+				<div class="keluarga">
+					<img src="images/gambar-2.jpg" alt="Kel. B. Siapa/Br. Siapa" class="foto-keluarga">
+				</div>
+
+				<div class="keluarga">
+					<img src="images/gambar-3.jpg" alt="Kel. C. Siapa/Br. Siapa" class="foto-keluarga">
+				</div>
+
+				<!-- <div class="keluarga">
+					<img src="images/gambar-4.jpg" alt="Kel. D. Siapa/Br. Siapa" class="foto-keluarga">
+				</div>
+
+				<div class="keluarga">
+					<img src="images/gambar-5.jpg" alt="Kel. E. Siapa/Br. Siapa" class="foto-keluarga">
+				</div>
+
+				<div class="keluarga">
+					<img src="images/gambar-6.jpg" alt="Kel. F. Siapa/Br. Siapa" class="foto-keluarga">
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<script>		
+		const tombolMulai = document.querySelector('button#mulai');
+		const tombolPilihPemenang = document.querySelector('button#pilih-pemenang');
+
+		const keluargaWrapper = document.querySelector('.keluarga-wrapper');
+		const keluarga = document.querySelector('.keluarga');
+		const keluargaPemenang = document.querySelector('.keluarga-pemenang');
+
+		tombolMulai.addEventListener('click', function() {
+			tombolMulai.style.display = 'none';
+			tombolPilihPemenang.style.display = 'block';
+			keluargaWrapper.remove();
+
+			let fotoKeluargaPemenang = "<img src='images/none.png' class='foto-keluarga-pemenang'>";
+			keluargaPemenang.insertAdjacentHTML('afterbegin', fotoKeluargaPemenang);			
+		});
+
+		let daftarFotoKeluarga = [
+				'gambar-0',
+				'gambar-1',
+				'gambar-2',
+				'gambar-3'
+				// 'gambar-4',
+				// 'gambar-5',
+				// 'gambar-6'
+			];
+
+		tombolPilihPemenang.addEventListener('click', function() {
+			
+			let fotoKeluargaPemenang = document.querySelector('.foto-keluarga-pemenang');
+			let indeksTerpilih = Math.floor(Math.random() * daftarFotoKeluarga.length);	
+
+			if (daftarFotoKeluarga.length - 1 == 0) {
+				fotoKeluargaPemenang.setAttribute('src', 'images/' + daftarFotoKeluarga[0] + '.jpg');
+				return;
+			}
+
+			function acakFoto() {
+				let i = 0
+				const waktuMulai =  new Date().getTime();
+
+				setInterval(function () {	
+					if (new Date().getTime() - waktuMulai > 3000) {
+						clearInterval;
+						return;
+					}
+					
+					fotoKeluargaPemenang.setAttribute('src', 'images/' + daftarFotoKeluarga[i++] + '.jpg');
+					if (i == daftarFotoKeluarga.length) i = 0;
+				}, 100);
+			} 
+
+			acakFoto();
+
+			setTimeout(function () {
+				new Audio('wow.mp3').play()	
+				fotoKeluargaPemenang.setAttribute('src', 'images/' + daftarFotoKeluarga[indeksTerpilih] + '.jpg');					
+				daftarFotoKeluarga.splice(indeksTerpilih, 1);
+
+				console.log('Gambar Yang Ditampilkan adalah gambar-' + indeksTerpilih);
+				console.log('Gambar Yang Tersisa' + daftarFotoKeluarga);	
+					
+			}, 3000);		
+		
+		});
+		
+	</script>
+</body>
+</html>
