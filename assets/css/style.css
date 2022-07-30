@@ -1,17 +1,16 @@
-*{
+*, ::after, ::before{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
     text-decoration: none;
+}
 
+:root{
     --border:1px solid #eee;
     --bg-color: #0fffff;
     --color: #05a6a6;
-}
-
-body{
-    overflow-x: hidden;
 }
 
 nav{
@@ -145,7 +144,9 @@ nav ul li a:hover{
     text-align: center;
 }
 
-hr{
+h2::after{
+    content: '';
+    display: block;
     border: 2px solid var(--bg-color);
     width: 50px;
     margin: .3em auto;
@@ -156,7 +157,7 @@ hr{
     -o-border-radius: 5px;
 }
 
-.list-of-books{
+.books{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -329,18 +330,10 @@ footer a{
     text-align: center;
 }
 
-.font-weight-bold{
-    font-weight: bold;
-}
-
 .text-justify{
     text-align: justify;
 }
 
 .font-italic{
     font-style: italic;
-}
-
-.text-decoration-none{
-    text-decoration: none;
 }
