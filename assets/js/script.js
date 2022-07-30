@@ -34,6 +34,7 @@ window.addEventListener('load', function () {
                     const img = document.createElement('img');
                     img.setAttribute('src', `../assets/img/${ebook.img}`);
                     img.setAttribute('alt', 'Cover E-book');
+                    img.setAttribute('loading', 'lazy');
 
                     const h4 = document.createElement('h4');
                     h4.innerHTML = 'Ringkasan';
@@ -83,6 +84,7 @@ window.addEventListener('load', function () {
                     const img = document.createElement('img');
                     img.setAttribute('src', `../assets/img/${ebook.img}`);
                     img.setAttribute('alt', 'Cover E-book');
+                    img.setAttribute('loading', 'lazy');
 
                     const h4 = document.createElement('h4');
                     h4.innerHTML = 'Ringkasan';
