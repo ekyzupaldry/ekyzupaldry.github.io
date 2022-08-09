@@ -37,5 +37,13 @@
         "img" : "tips-PD-membaca-alkitab.jpg",
         "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Desember 2021. Berisi tips bagi teman-teman yang ingin menjadikan Membaca Alkitab tidak hanya sekedar <strong>gaya hidup</strong>, tetapi menjadi <strong>kebutuhan hidup</strong> kerohanian.",
         "file" : "Tips PD Membaca Alkitab.pdf"
+    },
+    
+    {
+        "category" : "tips-and-tricks",
+        "title" : "TENTANG BERPUASA",
+        "img" : "tentang-berpuasa.jpg",
+        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Agustus 2022. Berisi jawaban dari pertanyaan-pertanyaan \"Tentang Puasa\" serta tips bagi teman-teman yang ingin berpuasa.",
+        "file" : "Tentang Berpuasa.pdf"
     }
 ]
