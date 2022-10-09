@@ -6,6 +6,7 @@ window.addEventListener('load', function () {
         ul.classList.toggle('open');
     });
 
+   if (document.getElementById('e-books') && document.getElementById('tips-and-tricks')) {
     const ebooks = document.getElementById('e-books');
     const tipsAndTricks = document.getElementById('tips-and-tricks');
 
@@ -121,4 +122,5 @@ window.addEventListener('load', function () {
 
     ajax.open('get', '../assets/json/e-books.json', true);
     ajax.send();
+   }
 });
