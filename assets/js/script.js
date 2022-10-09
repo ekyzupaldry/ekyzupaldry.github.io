@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+    console.log(Date('Y'));
     const checkbox = document.querySelector('.hamburger-menu input');
     const ul = document.querySelector('nav ul');
 
