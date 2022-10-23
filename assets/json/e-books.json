@@ -3,7 +3,7 @@
         "category" : "e-books",
         "title" : "HUBUNGAN ALLAH DENGAN MANUSIA",
         "img" : "hubungan-Allah-dengan-manusia.jpg",
-        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Mei 2021. Bermula dari sebuah pertanyaan, <strong>\"Bagaimana hubungan Allah dengan manusia?\"</strong>",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Mei 2021. Bermula dari sebuah pertanyaan, <strong>\"Bagaimana hubungan Allah dengan manusia?\"</strong>",
         "file" : "Hubungan Allah Dengan Manusia.pdf"
     },
     
@@ -11,7 +11,7 @@
         "category" : "e-books",
         "title" : "PD-NYA GUE JADI ANAK TUHAN",
         "img" : "PD-nya-gue-jadi-anak-Tuhan.jpg",
-        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Desember 2021. Berawal dari fenomena anak muda yang <strong>kurang PD terhadap dirinya sendiri dan <em>insecure</em> melihat <em>privillege</em> orang lain.</strong>",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Desember 2021. Berawal dari fenomena anak muda yang <strong>kurang PD terhadap dirinya sendiri dan <em>insecure</em> melihat <em>privillege</em> orang lain.</strong>",
         "file" : "PD-nya Gue Jadi Anak Tuhan.pdf"
     },
     
@@ -19,15 +19,23 @@
         "category" : "e-books",
         "title" : "JATUH CINTA JATUH TANPA RASA SAKIT",
         "img" : "jatuh-cinta-jatuh-tanpa-rasa-sakit.jpg",
-        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Juni 2022. Dimulai dari sebuah hal yang sering dibahas banyak orang, yakni <em>cinta</em>. Sebagai orang Kristen, <strong>\"Apakah kita benar-benar telah jatuh cinta dan menyatakannya kepada Tuhan Yesus?\"</strong>",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Juni 2022. Dimulai dari sebuah hal yang sering dibahas banyak orang, yakni <em>cinta</em>. Sebagai orang Kristen, <strong>\"Apakah kita benar-benar telah jatuh cinta dan menyatakannya kepada Tuhan Yesus?\"</strong>",
         "file" : "Jatuh Cinta Jatuh Tanpa Rasa Sakit.pdf"
+    },
+    
+    {
+        "category" : "e-books",
+        "title" : "TENANG DAN MENANG DALAM PERGUMULAN",
+        "img" : "tenang-dan-menang-dalam-pergumulan.jpg",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Oktober 2022. Membahas \"Bagaimana seharusnya orang Percaya menyikapi pergumulan yang sedang dia hadapi?\". Bagaimana caranya untuk tetap <em>Tenang dan Bertahan</em> sehingga bisa <em>Menang</em> dalam pergumulannya.,
+        "file" : "Tenang dan Menang Dalam Pergumulan.pdf"
     },
     
     {
         "category" : "tips-and-tricks",
         "title" : "TRIK MEMAKSIMALKAN PENCARIAN AYAT ALKITAB DI APLIKASI <span class='font-italic'>SMARTPHONE</span>",
         "img" : "trik-memaksimalkan-pencarian-ayat-alkitab-di-aplikasi-smartphone.jpg",
-        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Mei 2021. Berisi trik bagi teman-teman yang sering menggunakan aplikasi Alkitab di <span class='font-italic'>smartphone</span> untuk <strong>memaksimalkan pencarian ayat-ayat tertentu</strong> dalam Alkitab.",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Mei 2021. Berisi trik bagi teman-teman yang sering menggunakan aplikasi Alkitab di <span class='font-italic'>smartphone</span> untuk <strong>memaksimalkan pencarian ayat-ayat tertentu</strong> dalam Alkitab.",
         "file" : "Trik Memaksimalkan Pencarian Ayat Alkitab Di Aplikasi Smartphone.pdf"
     },
     
@@ -35,7 +43,7 @@
         "category" : "tips-and-tricks",
         "title" : "TIPS PD MEMBACA ALKITAB",
         "img" : "tips-PD-membaca-alkitab.jpg",
-        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Desember 2021. Berisi tips bagi teman-teman yang ingin menjadikan Membaca Alkitab tidak hanya sekedar <strong>gaya hidup</strong>, tetapi menjadi <strong>kebutuhan hidup</strong> kerohanian.",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Desember 2021. Berisi tips bagi teman-teman yang ingin menjadikan Membaca Alkitab tidak hanya sekedar <strong>gaya hidup</strong>, tetapi menjadi <strong>kebutuhan hidup</strong> kerohanian.",
         "file" : "Tips PD Membaca Alkitab.pdf"
     },
     
@@ -43,7 +51,7 @@
         "category" : "tips-and-tricks",
         "title" : "TENTANG BERPUASA",
         "img" : "tentang-berpuasa.jpg",
-        "description" : "<span class='font-italic'>E-book</span> ini selesai ditulis pada Agustus 2022. Berisi jawaban dari pertanyaan-pertanyaan <strong>\"Tentang Puasa\"</strong> serta tips bagi teman-teman yang ingin berpuasa.",
+        "description" : "<span class='font-italic'>E-book (Electronik Book)</span> atau Buku-El (Buku Elektronik) ini selesai ditulis pada Agustus 2022. Berisi jawaban dari pertanyaan-pertanyaan <strong>\"Tentang Puasa\"</strong> serta tips bagi teman-teman yang ingin berpuasa.",
         "file" : "Tentang Berpuasa.pdf"
     }
 ]
