@@ -205,7 +205,8 @@ h2::after{
     padding: 1em;
     font-size: .9rem;
     line-height: 1.3em;
-    text-indent: 1em;
+    text-indent: 1em;    
+    text-align: justify;
 }
 
 .card .card-body a{
