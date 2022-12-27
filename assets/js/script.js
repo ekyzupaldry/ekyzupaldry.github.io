@@ -6,121 +6,203 @@ window.addEventListener('load', function () {
         ul.classList.toggle('open');
     });
 
-   if (document.getElementById('e-books') && document.getElementById('tips-and-tricks')) {
-    const ebooks = document.getElementById('e-books');
-    const tipsAndTricks = document.getElementById('tips-and-tricks');
+    if (document.getElementById('general') && document.getElementById('special')) {
+        const genaral = document.getElementById('general');
+        const special = document.getElementById('special');
 
-    const ajax = new XMLHttpRequest();
-    ajax.onreadystatechange = function () {
-        if (this.status === 200 && this.readyState === 4) {
-            const data = JSON.parse(this.responseText);
+        const ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function () {
+            if (this.status === 200 && this.readyState === 4) {
+                const data = JSON.parse(this.responseText);
 
-            data.forEach(ebook => {
-                if (ebook.category == ebooks.getAttribute('id')) {
-                    const card = document.createElement('div');
-                    card.classList.add('card');
+                data.forEach(books => {
+                    if (books.category == genaral.getAttribute('id')) {
+                        const card = document.createElement('div');
+                        card.classList.add('card');
 
-                    const cardTitle = document.createElement('div');
-                    cardTitle.classList.add('card-title');
+                        const cardTitle = document.createElement('div');
+                        cardTitle.classList.add('card-title');
 
-                    const h3 = document.createElement('h3');
-                    h3.classList.add('text-center');
-                    h3.innerHTML = `${ebook.title}`;
+                        const h3 = document.createElement('h3');
+                        h3.classList.add('text-center');
+                        h3.innerHTML = `${books.title}`;
 
-                    cardTitle.append(h3);
+                        cardTitle.append(h3);
 
-                    const cardBody = document.createElement('div');
-                    cardBody.classList.add('card-body');
+                        const cardBody = document.createElement('div');
+                        cardBody.classList.add('card-body');
 
-                    const img = document.createElement('img');
-                    img.setAttribute('src', `../assets/img/${ebook.img}`);
-                    img.setAttribute('alt', 'Cover E-book');
-                    img.setAttribute('loading', 'lazy');
+                        const img = document.createElement('img');
+                        img.setAttribute('src', `../assets/covers/${books.cover}`);
+                        img.setAttribute('alt', 'Cover Buku');
+                        img.setAttribute('loading', 'lazy');
 
-                    const h4 = document.createElement('h4');
-                    h4.innerHTML = 'Ringkasan';
+                        const price = document.createElement('div');
+                        price.classList.add('price');
+                        price.classList.add('text-center');
+                        price.innerHTML = `Harga: ${books.price}`;
 
-                    const p =  document.createElement('p');
-                    p.innerHTML = `${ebook.description}`;
+                        const h4 = document.createElement('h4');
+                        h4.innerHTML = 'Ringkasan';
 
-                    cardBody.append(img, h4, p);
+                        const p =  document.createElement('p');
+                        p.innerHTML = `${books.description}`;
 
-                    const cardFooter = document.createElement('div');
-                    cardFooter.classList.add('card-footer');
+                        cardBody.append(img, price, h4, p);
 
-                    const btnRead = document.createElement('a');
-                    btnRead.setAttribute('href', `../assets/e-books/${ebook.file}`);
-                    btnRead.setAttribute('target', '_blank');
-                    btnRead.innerHTML = 'Baca Dulu';
-                    btnRead.classList.add('btn', 'btn-read');
+                        const cardFooter = document.createElement('div');
+                        cardFooter.classList.add('card-footer');
 
-                    const btnDownload = document.createElement('a');
-                    btnDownload.setAttribute('href', `../assets/e-books/${ebook.file}`);
-                    btnDownload.setAttribute('target', '_blank');
-                    btnDownload.setAttribute('download', `${ebook.title}`);
-                    btnDownload.innerHTML = 'Unduh Sekarang';
-                    btnDownload.classList.add('btn', 'btn-download');
+                        const btnRead = document.createElement('a');
+                        btnRead.setAttribute('href', `../assets/books/${books.file}`);
+                        btnRead.setAttribute('target', '_blank');
+                        btnRead.innerHTML = 'Baca Dulu';
+                        btnRead.classList.add('btn', 'btn-read');
 
-                    cardFooter.append(btnRead, btnDownload);
+                        const btnDownload = document.createElement('a');
+                        btnDownload.setAttribute('href', `../assets/books/${books.file}`);
+                        btnDownload.setAttribute('target', '_blank');
+                        btnDownload.setAttribute('download', `${books.title}`);
+                        btnDownload.innerHTML = 'Unduh Sekarang';
+                        btnDownload.classList.add('btn', 'btn-download');
 
-                    card.append(cardTitle, cardBody, cardFooter);
-                    ebooks.append(card);
+                        cardFooter.append(btnRead, btnDownload);
 
-                }else{
-                    const card = document.createElement('div');
-                    card.classList.add('card');
+                        card.append(cardTitle, cardBody, cardFooter);
+                        genaral.append(card);
 
-                    const cardTitle = document.createElement('div');
-                    cardTitle.classList.add('card-title');
+                    }else{
+                        const card = document.createElement('div');
+                        card.classList.add('card');
 
-                    const h3 = document.createElement('h3');
-                    h3.classList.add('text-center');
-                    h3.innerHTML = `${ebook.title}`
+                        const cardTitle = document.createElement('div');
+                        cardTitle.classList.add('card-title');
 
-                    cardTitle.append(h3);
+                        const h3 = document.createElement('h3');
+                        h3.classList.add('text-center');
+                        h3.innerHTML = `${books.title}`
 
-                    const cardBody = document.createElement('div');
-                    cardBody.classList.add('card-body');
+                        cardTitle.append(h3);
 
-                    const img = document.createElement('img');
-                    img.setAttribute('src', `../assets/img/${ebook.img}`);
-                    img.setAttribute('alt', 'Cover E-book');
-                    img.setAttribute('loading', 'lazy');
+                        const cardBody = document.createElement('div');
+                        cardBody.classList.add('card-body');
 
-                    const h4 = document.createElement('h4');
-                    h4.innerHTML = 'Ringkasan';
+                        const img = document.createElement('img');
+                        img.setAttribute('src', `../assets/covers/${books.cover}`);
+                        img.setAttribute('alt', 'Cover Buku');
+                        img.setAttribute('loading', 'lazy');
 
-                    const p =  document.createElement('p');
-                    p.innerHTML = `${ebook.description}`;
+                        const price = document.createElement('div');
+                        price.classList.add('price');
+                        price.classList.add('text-center');
+                        price.innerHTML = `Harga: ${books.price}`;
 
-                    cardBody.append(img, h4, p);
+                        const h4 = document.createElement('h4');
+                        h4.innerHTML = 'Ringkasan';
 
-                    const cardFooter = document.createElement('div');
-                    cardFooter.classList.add('card-footer');
+                        const p =  document.createElement('p');
+                        p.innerHTML = `${books.description}`;
 
-                    const btnRead = document.createElement('a');
-                    btnRead.setAttribute('href', `../assets/e-books/${ebook.file}`);
-                    btnRead.setAttribute('target', '_blank');
-                    btnRead.innerHTML = 'Baca Dulu';
-                    btnRead.classList.add('btn', 'btn-read');
+                        cardBody.append(img, price, h4, p);
 
-                    const btnDownload = document.createElement('a');
-                    btnDownload.setAttribute('href', `../assets/e-books/${ebook.file}`);
-                    btnDownload.setAttribute('target', '_blank');
-                    btnDownload.setAttribute('download', `${ebook.title}`);
-                    btnDownload.innerHTML = 'Unduh Sekarang';
-                    btnDownload.classList.add('btn', 'btn-download');
+                        const cardFooter = document.createElement('div');
+                        cardFooter.classList.add('card-footer');
 
-                    cardFooter.append(btnRead, btnDownload);
+                        const btnRead = document.createElement('a');
+                        btnRead.setAttribute('href', `../assets/books/${books.file}`);
+                        btnRead.setAttribute('target', '_blank');
+                        btnRead.innerHTML = 'Baca Dulu';
+                        btnRead.classList.add('btn', 'btn-read');
 
-                    card.append(cardTitle, cardBody, cardFooter);
-                    tipsAndTricks.append(card);
-                }
-            });
+                        const btnDownload = document.createElement('a');
+                        btnDownload.setAttribute('href', `../assets/books/${books.file}`);
+                        btnDownload.setAttribute('target', '_blank');
+                        btnDownload.setAttribute('download', `${books.title}`);
+                        btnDownload.innerHTML = 'Unduh Sekarang';
+                        btnDownload.classList.add('btn', 'btn-download');
+
+                        cardFooter.append(btnRead, btnDownload);
+
+                        card.append(cardTitle, cardBody, cardFooter);
+                        special.append(card);
+                    }
+                });
+            }
         }
-    }
 
-    ajax.open('get', '../assets/json/e-books.json', true);
-    ajax.send();
-   }
+        ajax.open('get', '../assets/json/free-books.json', true);
+        ajax.send();
+
+    }else{
+        const general = document.getElementById('general');
+
+        const ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function () {
+            if (this.status === 200 && this.readyState === 4) {
+                const data = JSON.parse(this.responseText);
+
+                data.forEach(books => {
+                    if (books.category == general.getAttribute('id')) {
+                        const card = document.createElement('div');
+                        card.classList.add('card');
+
+                        const cardTitle = document.createElement('div');
+                        cardTitle.classList.add('card-title');
+
+                        const h3 = document.createElement('h3');
+                        h3.classList.add('text-center');
+                        h3.innerHTML = `${books.title}`;
+
+                        cardTitle.append(h3);
+
+                        const cardBody = document.createElement('div');
+                        cardBody.classList.add('card-body');
+
+                        const img = document.createElement('img');
+                        img.setAttribute('src', `../assets/covers/${books.cover}`);
+                        img.setAttribute('alt', 'Cover Buku');
+                        img.setAttribute('loading', 'lazy');
+
+                        const price = document.createElement('div');
+                        price.classList.add('price');
+                        price.classList.add('text-center');
+                        price.innerHTML = `Harga: Rp${books.price}`;
+
+                        const h4 = document.createElement('h4');
+                        h4.innerHTML = 'Ringkasan';
+
+                        const p =  document.createElement('p');
+                        p.innerHTML = `${books.description}`;
+
+                        cardBody.append(img, price, h4, p);
+
+                        const cardFooter = document.createElement('div');
+                        cardFooter.classList.add('card-footer');
+
+                        const btnRead = document.createElement('a');
+                        btnRead.setAttribute('href', `../assets/books/${books.file}`);
+                        btnRead.setAttribute('target', '_blank');
+                        btnRead.innerHTML = 'Pratinjau';
+                        btnRead.classList.add('btn', 'btn-read');
+
+                        const btnDownload = document.createElement('a');
+                        btnDownload.setAttribute('href', `https://forms.gle/7ppoz4oKx8BQycy47`);
+                        btnDownload.setAttribute('target', '_blank');
+                        btnDownload.setAttribute('download', `${books.title}`);
+                        btnDownload.innerHTML = 'Beli Sekarang';
+                        btnDownload.classList.add('btn', 'btn-download');
+
+                        cardFooter.append(btnRead, btnDownload);
+
+                        card.append(cardTitle, cardBody, cardFooter);
+                        general.append(card);
+
+                    }
+                });
+            }
+        }
+
+        ajax.open('get', '../assets/json/paid-books.json', true);
+        ajax.send();
+    }
 });

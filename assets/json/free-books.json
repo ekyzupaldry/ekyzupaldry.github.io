@@ -1,0 +1,78 @@
+[
+    {
+        "media": "e-book",
+        "category" : "general",
+        "cover" : "tenang-dan-menang-dalam-pergumulan.jpg",
+        "title" : "TENANG DAN MENANG DALAM PERGUMULAN",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "Tenang dan Menang Dalam Pergumulan.pdf"
+    },
+    
+    {
+        "media": "e-book",
+        "category" : "general",
+        "cover" : "jatuh-cinta-jatuh-tanpa-rasa-sakit.jpg",
+        "title" : "JATUH CINTA JATUH TANPA RASA SAKIT",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "Jatuh Cinta Jatuh Tanpa Rasa Sakit.pdf"
+    },
+    
+    {
+        "media": "e-book",
+        "category" : "general",
+        "cover" : "PD-nya-gue-jadi-anak-Tuhan.jpg",
+        "title" : "PD-NYA GUE JADI ANAK TUHAN",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "PD-nya Gue Jadi Anak Tuhan.pdf"
+    },
+
+    {
+        "media": "e-book",
+        "category" : "general",
+        "cover" : "hubungan-Allah-dengan-manusia.jpg",
+        "title" : "HUBUNGAN ALLAH DENGAN MANUSIA",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "Hubungan Allah Dengan Manusia.pdf"
+    },
+
+    {
+        "media": "e-book",
+        "category" : "special",
+        "cover" : "tentang-berpuasa.jpg",
+        "title" : "TENTANG BERPUASA",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "Tentang Berpuasa.pdf"
+    },
+    
+    {
+        "media": "e-book",
+        "category" : "special",
+        "cover" : "tips-PD-membaca-alkitab.jpg",
+        "title" : "TIPS PD MEMBACA ALKITAB",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "Tips PD Membaca Alkitab.pdf"
+    },
+    
+    {
+        "media": "e-book",
+        "category" : "special",
+        "cover" : "trik-memaksimalkan-pencarian-ayat-alkitab-di-aplikasi-smartphone.jpg",
+        "title" : "TRIK MEMAKSIMALKAN PENCARIAN AYAT ALKITAB DI APLIKASI <span class='font-italic'>SMARTPHONE</span>",
+        "description" : "description",
+        "price": "Gratis",
+        "published time":"",
+        "file" : "Trik Memaksimalkan Pencarian Ayat Alkitab Di Aplikasi Smartphone.pdf"
+    }
+]
