@@ -45,10 +45,14 @@ window.addEventListener('load', function () {
                         const h4 = document.createElement('h4');
                         h4.innerHTML = 'Ringkasan';
 
+                        const published = document.createElement('span');
+                        published.classList.add('published');
+                        published.innerHTML = `${books.published}`;
+
                         const p =  document.createElement('p');
                         p.innerHTML = `${books.description}`;
 
-                        cardBody.append(img, price, h4, p);
+                        cardBody.append(img, price, h4, published, p);
 
                         const cardFooter = document.createElement('div');
                         cardFooter.classList.add('card-footer');
@@ -100,10 +104,14 @@ window.addEventListener('load', function () {
                         const h4 = document.createElement('h4');
                         h4.innerHTML = 'Ringkasan';
 
+                        const published = document.createElement('span');
+                        published.classList.add('published');
+                        published.innerHTML = `${books.published}`;
+
                         const p =  document.createElement('p');
                         p.innerHTML = `${books.description}`;
 
-                        cardBody.append(img, price, h4, p);
+                        cardBody.append(img, price, h4, published, p);
 
                         const cardFooter = document.createElement('div');
                         cardFooter.classList.add('card-footer');
@@ -171,10 +179,14 @@ window.addEventListener('load', function () {
                         const h4 = document.createElement('h4');
                         h4.innerHTML = 'Ringkasan';
 
+                        const published = document.createElement('span');
+                        published.classList.add('published');
+                        published.innerHTML = `${books.published}`;
+
                         const p =  document.createElement('p');
                         p.innerHTML = `${books.description}`;
 
-                        cardBody.append(img, price, h4, p);
+                        cardBody.append(img, price, h4, published, p);
 
                         const cardFooter = document.createElement('div');
                         cardFooter.classList.add('card-footer');

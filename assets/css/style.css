@@ -201,11 +201,19 @@ h2::after{
     border-bottom: var(--border);
 }
 
+.card .card-body .published{
+    font-size: .7em;
+    padding: .5em;
+    font-weight: bold;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
 .card .card-body p{
     padding: 1em;
     font-size: .9rem;
     line-height: 1.3em;
-    text-indent: 1em;    
+    text-indent: 1em;
     text-align: justify;
 }
 
