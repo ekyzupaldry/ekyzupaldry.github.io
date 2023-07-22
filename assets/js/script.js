@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+
+    // Hamburger Menu
     const checkbox = document.querySelector('.hamburger-menu input');
     const ul = document.querySelector('nav ul');
 
@@ -6,6 +8,9 @@ window.addEventListener('load', function () {
         ul.classList.toggle('open');
     });
 
+    // Get Social Medias' JSON
+
+    // Get Book's JSON
     if (document.getElementById('general') && document.getElementById('special')) {
         const genaral = document.getElementById('general');
         const special = document.getElementById('special');

@@ -167,9 +167,15 @@ h2::after{
     justify-content: center;
 }
 
+.card-wrapper{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
 .card{
     margin: 1em;
-    width: 350px;
+    width: 300px;
     border: var(--border);
     background-color: white;
     border-radius: 10px;
