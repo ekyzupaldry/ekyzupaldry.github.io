@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You</title>
+    <style>
+        #tombolNgga, #tombolMau{
+            border:0;
+            color: white;
+            cursor: pointer;
+            padding: 1em;
+            margin: 1em;
+            font-size: 1rem;
+            background-color: red;
+            box-shadow: 1px 1px 10px black;
+        }
+
+        #tombolNgga {
+            background-color: aqua;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>KAMU MAU NGGA JADI PACAR AKU?</h1>
+    <button id="tombolMau">MAU</button>
+    <button id="tombolNgga">NGGA</button>
+
+    <script>
+        let tombolMau = document.getElementById('tombolMau');
+        let tombolNgga = document.getElementById('tombolNgga');
+
+        tombolMau.addEventListener('mouseenter', function (e) {
+            let tombolMau = document.getElementById('tombolMau');
+            let x = Math.ceil(Math.random() * 500);
+            let y = Math.ceil(Math.random() * 100) + tombolMau.offsetTop;
+            console.log(this);
+            this.style.position = "absolute";
+            this.style.left = x + "px";
+            this.style.top = y + "px";
+        });
+
+        tombolNgga.addEventListener('click', function () {
+            alert('MAAF YA, KAMU TERLALU SEMPURNA BUAT AKU!');
+        });
+    </script>
+</body>
+</html>
