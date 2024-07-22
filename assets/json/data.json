@@ -1,0 +1,126 @@
+[
+    {
+        "category": "social-medias",
+        "platformName": "Instagram",
+        "src": "assets/img/instagram-1x.png",
+        "link": "https://www.instagram.com/arts.ekyzupaldry",
+        "username": "@arts.ekyzupaldry"
+
+    },
+
+    {
+        "category": "social-medias",
+        "platformName": "Instagram",
+        "src": "assets/img/instagram-1x.png",
+        "link": "https://www.instagram.com/ekyzupaldry",
+        "username": "@ekyzupaldry"
+    },
+
+    {
+        "category": "social-medias",
+        "platformName": "Facebook",
+        "src": "assets/img/facebook-1x.png",
+        "link": "https://www.facebook.com/ekyzupaldry",
+        "username": "@ekyzupaldry"
+    },
+    
+    {
+        "category": "experiment-labs",
+        "platformName": "Github",
+        "src": "assets/img/github-1x.png",
+        "link": "https://www.github.com/ekyzupaldry",
+        "username": "@ekyzupaldry"
+    },
+
+    {
+        "category": "experiment-labs",
+        "platformName": "YouTube",
+        "src": "assets/img/youtube-1x.png",
+        "link": "https://www.youtube.com/@arts.ekyzupaldry",
+        "username": "@arts.ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Sediksi",
+        "link": "https://www.sediksi.com/kontributor/eky-zupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Sohib",
+        "link": "https://www.sohib.indonesiabaik.id/ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Kompasiana",
+        "link": "https://www.kompasiana.com/ekyzupaldry1806"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Nine Vibe",
+        "link": "https://www.ninevibe.com/user/ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Medium",
+        "link": "https://www.medium.com/@ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Lainnya",
+        "link": "https://www.instagram.com/stories/highlights/17895362099783877"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2024) Juara 4 (Favorit) Lomba Kritik Sastra: Cerpen-cerpen Felix K. Nesi</strong> — Diselenggarakan oleh Seksi Sastrawi Badan Eksekutif Mahasiswa Institut Filsafat dan Teknologi Kreatif Ledalero",
+        "link": "https://www.instagram.com/p/C6DmSGbPynr/?img_index=5"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2024) Juara Harapan 3 Lomba \"Cerita Pemiluku\" Kategori Tulisan</strong> — Diselenggarakan oleh Bumi Pancasila",
+        "link": "https://www.instagram.com/p/C5gXaJ0hVzI/?img_index=2"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2024) Juara 3 Lomba Artikel \"Indonesia dalam Pluralitas Masa Kini dan Masa Depan\"</strong> — Diselenggarakan oleh Kalimah Sawa",
+        "link": "https://www.instagram.com/p/C3Nb3eeyLCx"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2023) Finalis 15 Besar Lomba Ulas Film Nasional \"Jelajah Layar Indonesia\" Kategori Mahasiswa</strong> — Diselenggarakan oleh Direktorat Perfilman, Musik, dan Media, Direktorat Jenderal Kebudayaan, Kemendikbudristek RI",
+        "link": "https://www.instagram.com/p/C0tKdI2y4-b?img_index=2"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2023) Juara 1 Lomba Menulis Artikel \"Konspirasi\" Periode Oktober</strong> — Diselenggarakan oleh Nine Vibe",
+        "link": "https://www.instagram.com/p/C0bxi1zr8UA"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2023) Juara 1 Lomba Menulis Artikel \"Inovasi Digital dalam Dunia Hukum\"</strong> — Diselenggarakan oleh Online Legal Consultant",
+        "link": "https://www.instagram.com/p/CsAGIotv6JX/?img_index=2"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2023) Juara Harapan 2 Lomba Menulis Opini \"<span class=\"text-italic\">Soft Skill dan Hard Skill</span>\"</strong> — Diselenggarakan oleh Cahaya Kebaikan Pemuda",
+        "link": "https://www.instagram.com/p/Cn0sTHhvgxh/?img_index=3"
+    },
+    
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2019) Juara 2 Lomba Kompetensi Siswa SMK se-Provinsi Riau Bidang Web Technology</strong> — Diselenggarakan oleh Dinas Pendidikan Provinsi Riau",
+        "link": "assets/img/lks-web-technology.jpg"
+    }  
+]
