@@ -49,7 +49,7 @@ window.addEventListener('load', function () {
                 writingPlatformsLink.classList.add('link');
 
                 const achievementText =  document.createElement('h2');
-                achievementText.innerHTML = '🏆 Prestasi';
+                achievementText.innerHTML = '🍻 Penghargaan';
                 const achievementsLink =  document.createElement('ol');
                 achievementsLink.classList.add('link');
 
