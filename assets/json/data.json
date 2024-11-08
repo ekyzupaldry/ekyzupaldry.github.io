@@ -29,7 +29,7 @@
         "platformName": "Github",
         "src": "assets/img/github-1x.png",
         "link": "https://www.github.com/ekyzupaldry",
-        "username": "@ekyzupaldry"
+        "username": "Github (@ekyzupaldry)"
     },
 
     {
@@ -37,7 +37,15 @@
         "platformName": "YouTube",
         "src": "assets/img/youtube-1x.png",
         "link": "https://www.youtube.com/@arts.ekyzupaldry",
-        "username": "@arts.ekyzupaldry"
+        "username": "Youtube (@arts.ekyzupaldry)"
+    },
+
+    {
+        "category": "experiment-labs",
+        "platformName": "Google Scholar",
+        "src": "assets/img/google-scholar-1x.png",
+        "link": "https://scholar.google.com/citations?user=88FN5uYAAAAJ",
+        "username": "Google Scholar (88FN5uYAAAAJ)"
     },
 
     {
