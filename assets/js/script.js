@@ -103,7 +103,7 @@ window.addEventListener('load', function () {
                         const span = document.createElement('span');                        
                         span.innerHTML = `» ${data.citation}`;
                         const a = document.createElement('a'); 
-                        a.innerHTML = "Klik di sini";
+                        a.innerHTML = "Lihat di sini";
                         a.setAttribute('href', data.link);
                         a.setAttribute('target', '_blank');
                         academicPaper.append(span, " ", a);
