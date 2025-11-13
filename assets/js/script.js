@@ -93,14 +93,14 @@ window.addEventListener('load', function () {
                         writingPlatform.append(a);
                         writingPlatformsLink.append(writingPlatform);
 
-                    }else if (data.category == 'academic-writing') {
-                        const writingPlatform = document.createElement('li');
+                    }else if (data.category == 'academic-papers') {
+                        const academicPapers = document.createElement('li');
                         const a = document.createElement('a');                        
-                        a.innerHTML = `» ${data.platformName}`;
+                        a.innerHTML = `» ${data.citation}`;
                         a.setAttribute('href', data.link);
                         a.setAttribute('target', '_blank');
-                        writingPlatform.append(a);
-                        writingPlatformsLink.append(writingPlatform);
+                        academicPaper.append(a);
+                        academicPapers.append();
 
                     }else if (data.category == 'achievements') {
                         const achievement = document.createElement('li');
@@ -127,6 +127,10 @@ window.addEventListener('load', function () {
                 writingPlatforms.append(writingPlatformText);
                 writingPlatforms.append(writingPlatformsLink);
 
+                const academicWritings = document.getElementById('academic-papers');
+                academicPapers.append(academicPaperText);
+                academicPapers.append(academicPapersLink);
+                
                 const achievements = document.getElementById('achievements');
                 const achievementCautionText = document.createElement('em');
                 achievementCautionText.innerHTML = "NB: Ini cuma yang bagus-bagusnya aja. Jangan salah kira, saya justru lebih sering gagal dan kalah.";
@@ -134,7 +138,7 @@ window.addEventListener('load', function () {
                 achievements.append(achievementCautionText);
                 achievements.append(achievementsLink);
     
-                works.append(experimentLabs, writingPlatforms, achievements);
+                works.append(experimentLabs, writingPlatforms, academicPapers, achievements);
             }
         }
 
