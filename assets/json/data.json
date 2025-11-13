@@ -80,7 +80,7 @@
 
     {
         "category": "writing-platforms",
-        "platformName": "Bandung Bergerak",
+        "platformName": "BandungBergerak",
         "link": "https://bandungbergerak.id/writer/851/eky-zupaldry"
     },
     
@@ -98,7 +98,7 @@
 
     {
         "category": "achievements",
-        "raihan": "<strong>(2024) Juara 1 Sayembara Mahasiswa Bersuara </strong> — Diselenggarakan oleh BandungBergerak.id",
+        "raihan": "<strong>(2024) Juara 1 Sayembara Mahasiswa Bersuara </strong> — Diselenggarakan oleh BandungBergerak",
         "link": "https://bandungbergerak.id/article/detail/1598826/sabtu-sore-17-indonesiagelap-alasan-mahasiswa-harus-terus-melawan"
     },
 
@@ -134,7 +134,7 @@
     
     {
         "category": "achievements",
-        "raihan": "<strong>(2023) 28 Besar Sayembara Mahasiswa Bersuara </strong> — Diselenggarakan oleh BandungBergerak.id",
+        "raihan": "<strong>(2023) 28 Besar Sayembara Mahasiswa Bersuara </strong> — Diselenggarakan oleh BandungBergerak",
         "link": ""
     },
     
@@ -162,6 +162,7 @@
         "link": "assets/img/lks-web-technology.jpg"
     }  
 ]
+
 
 
 
