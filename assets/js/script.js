@@ -100,11 +100,12 @@ window.addEventListener('load', function () {
 
                     }else if (data.category == 'academic-papers') {
                         const academicPaper = document.createElement('li');
-                        const a = document.createElement('a');                        
-                        a.innerHTML = `» ${data.citation}`;
+                        const span = document.createElement('span');                        
+                        span.innerHTML = `» ${data.citation}`;
+                        a.innerHTML = "Klik di sini";
                         a.setAttribute('href', data.link);
                         a.setAttribute('target', '_blank');
-                        academicPaper.append(a);
+                        academicPaper.append(span, a);
                         academicPapersLink.append(academicPaper);
 
                     }else if (data.category == 'achievements') {
