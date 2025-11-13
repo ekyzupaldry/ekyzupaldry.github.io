@@ -99,7 +99,7 @@ window.addEventListener('load', function () {
                         writingPlatformsLink.append(writingPlatform);
 
                     }else if (data.category == 'academic-papers') {
-                        const academicPapers = document.createElement('li');
+                        const academicPaper = document.createElement('li');
                         const a = document.createElement('a');                        
                         a.innerHTML = `» ${data.citation}`;
                         a.setAttribute('href', data.link);
