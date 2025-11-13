@@ -80,6 +80,12 @@
 
     {
         "category": "writing-platforms",
+        "platformName": "Bandung Bergerak",
+        "link": "https://bandungbergerak.id/writer/851/eky-zupaldry"
+    },
+    
+    {
+        "category": "writing-platforms",
         "platformName": "Lainnya",
         "link": "https://www.instagram.com/stories/highlights/17895362099783877"
     },
@@ -88,6 +94,12 @@
         "category": "academic-papers",
         "citation": "Zupaldry, Eky. “Ketika Si Binal Menggoda Si Manis: Sebuah Reinterpretasi Ideologi Kejadian 39:1–23 Dalam Menyelisik Dinamika Kekuasaan Dan Kekerasan Seksual.” Aradha: Journal of Divinity, Peace and Conflict Studies 3, no. 1 (2023): 1. https://doi.org/10.21460/aradha.2023.31.1260.",
         "link": "https://journal-theo.ukdw.ac.id/index.php/aradha/article/view/1260"
+    },
+
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2024) Juara 1 Sayembara Mahasiswa Bersuara </strong> — Diselenggarakan oleh BandungBergerak.id",
+        "link": "https://bandungbergerak.id/article/detail/1598826/sabtu-sore-17-indonesiagelap-alasan-mahasiswa-harus-terus-melawan"
     },
 
     {
@@ -116,10 +128,16 @@
 
     {
         "category": "achievements",
-        "raihan": "<strong>(2023) Finalis 15 Besar Lomba Ulas Film Nasional \"Jelajah Layar Indonesia\" Kategori Mahasiswa</strong> — Diselenggarakan oleh Direktorat Perfilman, Musik, dan Media, Direktorat Jenderal Kebudayaan, Kemendikbudristek RI",
+        "raihan": "<strong>(2023) 15 Besar Lomba Ulas Film Nasional \"Jelajah Layar Indonesia\" Kategori Mahasiswa</strong> — Diselenggarakan oleh Direktorat Perfilman, Musik, dan Media, Direktorat Jenderal Kebudayaan, Kemendikbudristek RI",
         "link": "https://www.instagram.com/p/C0tKdI2y4-b?img_index=2"
     },
-
+    
+    {
+        "category": "achievements",
+        "raihan": "<strong>(2023) 28 Besar Sayembara Mahasiswa Bersuara </strong> — Diselenggarakan oleh BandungBergerak.id",
+        "link": ""
+    },
+    
     {
         "category": "achievements",
         "raihan": "<strong>(2023) Juara 1 Lomba Menulis Artikel \"Konspirasi\" Periode Oktober</strong> — Diselenggarakan oleh Nine Vibe",
@@ -144,6 +162,7 @@
         "link": "assets/img/lks-web-technology.jpg"
     }  
 ]
+
 
 
 
