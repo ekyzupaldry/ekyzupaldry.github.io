@@ -105,7 +105,7 @@ window.addEventListener('load', function () {
                         a.setAttribute('href', data.link);
                         a.setAttribute('target', '_blank');
                         academicPaper.append(a);
-                        academicPapers.append();
+                        academicPapersLink.append(academicPaper);
 
                     }else if (data.category == 'achievements') {
                         const achievement = document.createElement('li');
