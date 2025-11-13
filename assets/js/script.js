@@ -48,6 +48,11 @@ window.addEventListener('load', function () {
                 const writingPlatformsLink =  document.createElement('ol');
                 writingPlatformsLink.classList.add('link');
 
+                const academicPaperText =  document.createElement('h2');
+                academicPaperText.innerHTML = '🧪 Artikel Ilmiah';
+                const academicPapersLink =  document.createElement('ol');
+                academicPapersLink.classList.add('link');
+                
                 const achievementText =  document.createElement('h2');
                 achievementText.innerHTML = '🍻 Penghargaan';
                 const achievementsLink =  document.createElement('ol');
@@ -127,7 +132,7 @@ window.addEventListener('load', function () {
                 writingPlatforms.append(writingPlatformText);
                 writingPlatforms.append(writingPlatformsLink);
 
-                const academicWritings = document.getElementById('academic-papers');
+                const academicPapers = document.getElementById('academic-papers');
                 academicPapers.append(academicPaperText);
                 academicPapers.append(academicPapersLink);
                 
