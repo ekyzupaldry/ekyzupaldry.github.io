@@ -106,7 +106,7 @@ window.addEventListener('load', function () {
                         a.innerHTML = "Klik di sini";
                         a.setAttribute('href', data.link);
                         a.setAttribute('target', '_blank');
-                        academicPaper.append(span, " ", a);
+                        academicPaper.append(span, a);
                         academicPapersLink.append(academicPaper);
 
                     }else if (data.category == 'achievements') {
