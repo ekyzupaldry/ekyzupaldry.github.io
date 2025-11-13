@@ -44,7 +44,7 @@ window.addEventListener('load', function () {
                 experimentLabsLink.classList.add('link');
                 
                 const writingPlatformText =  document.createElement('h2');
-                writingPlatformText.innerHTML = '✍🏼 Platform Menulis';
+                writingPlatformText.innerHTML = '✍🏼 Platform Menulis (Esai, Artikel, dan Opini)';
                 const writingPlatformsLink =  document.createElement('ol');
                 writingPlatformsLink.classList.add('link');
 
@@ -85,6 +85,15 @@ window.addEventListener('load', function () {
                         experimentLabsLink.append(experimentLab);
 
                     }else if (data.category == 'writing-platforms') {
+                        const writingPlatform = document.createElement('li');
+                        const a = document.createElement('a');                        
+                        a.innerHTML = `» ${data.platformName}`;
+                        a.setAttribute('href', data.link);
+                        a.setAttribute('target', '_blank');
+                        writingPlatform.append(a);
+                        writingPlatformsLink.append(writingPlatform);
+
+                    }else if (data.category == 'academic-writing') {
                         const writingPlatform = document.createElement('li');
                         const a = document.createElement('a');                        
                         a.innerHTML = `» ${data.platformName}`;
