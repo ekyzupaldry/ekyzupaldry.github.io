@@ -50,6 +50,24 @@
 
     {
         "category": "writing-platforms",
+        "platformName": "Medium",
+        "link": "https://www.medium.com/@ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "Substack",
+        "link": "https://substack.com/@ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
+        "platformName": "BandungBergerak",
+        "link": "https://bandungbergerak.id/writer/851/eky-zupaldry"
+    },
+    
+    {
+        "category": "writing-platforms",
         "platformName": "Sediksi",
         "link": "https://www.sediksi.com/kontributor/eky-zupaldry"
     },
@@ -70,24 +88,6 @@
         "category": "writing-platforms",
         "platformName": "Nine Vibe",
         "link": "https://www.ninevibe.com/user/ekyzupaldry"
-    },
-
-    {
-        "category": "writing-platforms",
-        "platformName": "Medium",
-        "link": "https://www.medium.com/@ekyzupaldry"
-    },
-
-    {
-        "category": "writing-platforms",
-        "platformName": "Substack",
-        "link": "https://substack.com/@ekyzupaldry"
-    },
-
-    {
-        "category": "writing-platforms",
-        "platformName": "BandungBergerak",
-        "link": "https://bandungbergerak.id/writer/851/eky-zupaldry"
     },
     
     {
