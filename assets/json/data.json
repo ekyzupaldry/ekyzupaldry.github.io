@@ -80,6 +80,12 @@
 
     {
         "category": "writing-platforms",
+        "platformName": "Substack",
+        "link": "https://www.medium.com/@ekyzupaldry"
+    },
+
+    {
+        "category": "writing-platforms",
         "platformName": "BandungBergerak",
         "link": "https://bandungbergerak.id/writer/851/eky-zupaldry"
     },
